@@ -1,5 +1,6 @@
 displayName = Low Health Effects
 author = Chik3r
-version = 0.1
+version = 0.1.1
 side = Client
 includePDB = false
+homepage = https://github.com/Chik3r/LowHealthEffects
