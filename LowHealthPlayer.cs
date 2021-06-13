@@ -13,6 +13,9 @@ namespace LowHealthEffects
 			if (Main.netMode == NetmodeID.Server)
 				return;
 
+			if (player.whoAmI != Main.myPlayer)
+				return;
+
 			#region Saturation
 			if (!Filters.Scene["HealthSaturation"].IsActive() && LowHealthEffects.SaturationEnabled)
 				Filters.Scene.Activate("HealthSaturation");
